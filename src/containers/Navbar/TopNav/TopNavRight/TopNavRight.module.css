@@ -1,0 +1,68 @@
+.TopNavRight {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap : 4px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    width: max-content;
+}
+
+.Language {
+    padding: 13px 5px 0px 5px;
+    margin-left: 3px;
+    width: 50px;
+}
+
+
+.Arrow {
+    margin-left: 3px;
+    padding-bottom: 2px;
+}
+
+.Accounts {
+    height: 35px;
+    color: white;
+    display: flex;
+    padding: auto;
+    padding-top: 7px ;
+    padding-left: 7px;
+    font-size: 13px;
+}
+
+.Accounts > img {
+    padding-top : 20px;
+}
+
+.Accounts > div > p > strong , .Returns > p > strong {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.Accounts:hover , .Returns:hover , .Language:hover , .Cart:hover {
+    border: 1px solid white;
+}
+
+.Returns {
+    height: 35px;
+    color: white;
+    padding: auto;
+    padding-top: 7px ;
+    padding-left: 7px;
+    font-size: 13px;
+}
+
+.Cart {
+    padding-top: 7px;
+    height: 34px;
+}
+
+
+.CartItems {
+    color: #F0880A;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    bottom: 35px;
+    left : 23px;
+}

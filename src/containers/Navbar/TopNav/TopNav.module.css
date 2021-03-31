@@ -1,0 +1,10 @@
+.TopNav {
+    height: 54px;
+    background-color: #131921;
+    box-sizing: border-box;
+    display: inline-grid;
+    grid-template-columns: 220px auto 370px;
+    width: 100%;
+    padding : 4px 4px 10px 10px;
+}
+

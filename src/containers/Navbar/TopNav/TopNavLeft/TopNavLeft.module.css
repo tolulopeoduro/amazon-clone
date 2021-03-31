@@ -1,0 +1,44 @@
+.TopNavLeft {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    float: left;
+}
+
+.Logo {
+    height: 33px ;
+    width: 110px;
+    padding: 7px 8px 7px 4px;
+}
+
+.Logo > img {
+    height: 30px;
+    padding: 5px auto;
+    padding-top: 5px;
+}
+
+.Logo:hover {
+    border: 1px solid white;
+    box-sizing: content-box;
+}
+
+.DeliverTo {
+    min-width: 110px;
+    height: 47px;
+    margin-right: 5px;
+    max-width: 120px;
+    display: flex;
+    color: white;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.DeliverTo:hover {
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.DeliverTo > img {
+    margin-top: 10px;
+}
+

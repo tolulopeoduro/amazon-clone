@@ -1,0 +1,9 @@
+.Navbar {
+    width : 100vw;
+}
+
+@media (max-width : 999px) {
+    .Navbar {
+        width: 1210px;
+    }
+}

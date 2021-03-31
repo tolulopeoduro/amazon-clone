@@ -1,0 +1,67 @@
+.SearchBar {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.Focused {
+    border: 3px solid #FF9900;
+    border-radius: 5px;
+}
+
+
+
+
+
+.Select , .Input , .Submit {
+    height : 100%;
+    box-sizing: border-box;
+}
+
+.Select > select {
+    background-color: #e6e6e6;
+    height: 100%;
+    border: 0px;
+    border-radius:  3px 0px 0px 3px;
+    outline: none;
+    border-right: 1px solid #CDCDCD;
+}
+
+.SelectFocus {
+    border: 3px solid #FF9900;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.Input > input {
+    height: 100%;
+    box-sizing: border-box;
+    border: 0px;
+    outline: none;
+    width: 100%;
+}
+
+.Input > input:focus {
+    outline: none;
+}
+
+.Submit > button {
+    height: 100%;
+    width : 44px;
+    border: 0px;
+    padding: auto;
+    border-radius: 0px 3px 3px 0px;
+    background-color: #FEBD69;
+}
+
+.Submit > button > img {
+    height: 23px;
+}
+
+@media (max-width : 999px) {
+    .SearchBar {
+        width: 600px;
+    }
+}
