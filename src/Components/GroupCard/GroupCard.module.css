@@ -1,0 +1,50 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px 0px 15px 0px;
+}
+
+.Header {
+    font-size: 21px;
+    width: 90%;
+    height: 27px;
+    margin: 0px auto;
+}
+
+.Image {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    height: 304px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+.Footer {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.Footer > a {
+    text-decoration: none;
+}
+
+.SubGrid {
+    padding-top : 10px;
+}
+
+.SubGridImage {
+    margin : 0px auto;
+    width: fit-content;
+}
+
+.SubGridName {
+    font-size: 12px;
+    line-height: 18px;
+    width: 100%;
+}

@@ -1,0 +1,48 @@
+.MainDiv {
+    overflow: hidden;
+}
+
+.CarouselContainer {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.Image {
+  position: relative;
+  width: 100vw;
+  height: 600px ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+image > img {
+  position: relative; 
+  height: 600px;
+}
+
+
+@media (max-width : 999px) {
+    .Carousel , .Image {
+      width: 1200px;
+    }
+  }
+
+  .PrevSlideButton , .NextSlideButton {
+    height: 240px;
+    box-sizing: border-box;
+    width: 120px;
+    position: relative;
+    bottom: 600px;
+  }
+  
+  .PrevSlideButton {
+    padding: 96px 0px 0px 10px;
+    float: left;
+  }
+  
+  .NextSlideButton {
+    padding: 96px 0px 0px 70px;
+    float: right;
+  }

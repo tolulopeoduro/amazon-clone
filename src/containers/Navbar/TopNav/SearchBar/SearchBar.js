@@ -55,12 +55,6 @@ const SearchBar = ()  => {
             }
         }, 0);
     } , [category])
-    
-    //useEffect(() => {
-    //    prevCat
-    //} , [category])
-
-    
 
 
     

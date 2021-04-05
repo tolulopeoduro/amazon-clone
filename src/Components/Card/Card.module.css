@@ -1,0 +1,36 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0px 15px 0px;
+}
+
+.Header {
+    font-size: 21px;
+    width: 90%;
+    height: 27px;
+    margin: 0px auto;
+}
+
+.Image {
+    flex-shrink: initial;
+    overflow: hidden;
+    height: 304px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0px auto;
+    background-position: center;
+}
+
+.Footer {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.Footer > a {
+    text-decoration: none;
+}

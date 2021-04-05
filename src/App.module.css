@@ -1,7 +1,10 @@
-
+.App {
+  overflow-x: hidden;
+  height: 100%;
+}
 
 @media (max-width : 999px) {
-  App {
-    width: 1500px;
+  .App {
+    width: 1200px;
   }
 }

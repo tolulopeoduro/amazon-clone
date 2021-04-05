@@ -1,0 +1,9 @@
+.Layout {
+    width: 100%;
+}
+
+@media (max-width : 999px) {
+    .Layout {
+      width: 1200px;
+    }
+  }

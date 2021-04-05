@@ -2,7 +2,9 @@
     height: 40px;
     background-color: #232F3E;
     display: flex;
-    padding : 0px 12px
+    padding : 0px 12px;
+    box-sizing: border-box;
+    width: 100%
 }
 
 .All {
