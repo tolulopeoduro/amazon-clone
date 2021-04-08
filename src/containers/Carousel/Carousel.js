@@ -90,29 +90,32 @@ const Carousel  = () => {
 
 
     const slides = List.map(images => 
-    <div ref = {image} className = {classes.Image}>
+    <div ref = {image} className = {classes.Image} >
+        <div></div>
         <img src = {images.src}/>
     </div>)
 
     window.addEventListener("load" , () => setCurrent(1))
-    window.addEventListener("resize" , () => { autoslide.current = false})
+    //window.addEventListener("resize" , () => { autoslide.current = false})
     window.addEventListener("resize" , () => setWindowWidth(window.innerWidth))
     return (
         <div className = {classes.Maindiv}>
             <div className ={classes.CarouselContainer} ref = {carousel}>
                 {slides}
             </div>
-            <div className = {classes.PrevSlideButton} onClick = {() => {
-                autoslide.current = false
-                setCurrent(current - 1)
-            }}>
-                <img src = {"/images/prev-slide.svg"} height = "40px" width = "40px" />
-            </div>
-            <div className = {classes.NextSlideButton} onClick = {() => {
-                autoslide.current = false
-                setCurrent(current + 1)
-            }}>
-                <img src = {"/images/next-slide.svg"} height = "40px" width = "40px" />
+            <div className = {classes.Controls}>
+                <div className = {classes.PrevSlideButton} onClick = {() => {
+                    autoslide.current = false
+                    setCurrent(current - 1)
+                }}>
+                    <img src = {"/images/prev-slide.svg"} height = "40px" width = "40px" />
+                </div>
+                <div className = {classes.NextSlideButton} onClick = {() => {
+                    autoslide.current = false
+                    setCurrent(current + 1)
+                }}>
+                    <img src = {"/images/next-slide.svg"} height = "40px" width = "40px" />
+                </div>
             </div>
         </div>
     )

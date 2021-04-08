@@ -2,6 +2,9 @@ import React from 'react'
 import classes from "./GroupCard.module.css"
 
 const GroupCard = (props) => {
+
+    
+
     return (
         <div style = {{gridArea : props.gridArea}} className = {[classes.Main , classes.withFourChildren].join(" ")}>
             <div className = {classes.Header}>
@@ -11,8 +14,8 @@ const GroupCard = (props) => {
                 {
                     props.subgrids.map(sub => (
                         <div className = {classes.SubGrid}>
-                            <div className = {classes.SubGridImage}>
-                                <img src = {sub.src} />
+                            <div className = {classes.SubGridImage} style ={!props.useImg ? {backgroundImage : `url(${sub.src})`} : null}>
+                                {props.useImg ? <img src = {sub.src}/> : null}
                             </div>
                             <div style = {{textAlign : props.textAlign}} className = {classes.SubGridName}>
                                 {sub.name}

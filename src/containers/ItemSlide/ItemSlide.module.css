@@ -1,0 +1,79 @@
+.Main {
+    height: 305px;
+    width: auto;
+    margin: 20px 20px 0px 20px;
+    background-color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Header {
+    height: 45px;
+    margin-top: 10px;
+}
+
+    .Header > span {
+        font-size: 30px;
+    }
+
+    .Header > a {
+        margin-left : 30px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .Body {
+        position: relative;
+    }
+
+    .Prev , .Next {
+        width: 46px;
+        height: 100px;
+        background-color: white;
+    }
+
+    .Prev > img , .Next > img {
+        height: 20px;
+        width: 24px;
+        margin: 40px 8px;
+        border-radius: 4px;
+    }
+
+    .Hide {
+        display: none !important;
+    }
+
+    .Prev {
+    box-shadow: 2px 1px 2px rgb(105, 105, 105);
+}
+
+.Next {
+    box-shadow: -2px 1px 2px rgb(105, 105, 105);
+}
+
+.Control{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 60px
+}
+
+
+.Items {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+@media (max-width : 1124px) {
+    .Main {
+      width: 1200px;
+      grid-template-columns: repeat(3 , 1fr);
+      grid-template-areas: "one two three";
+    }
+  }

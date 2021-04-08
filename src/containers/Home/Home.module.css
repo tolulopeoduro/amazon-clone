@@ -1,0 +1,36 @@
+.Home {
+    width: 100%;
+    overflow: hidden;
+}
+
+.Products {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 100%;
+}
+
+.Cards {
+  box-sizing: border-box;
+  width: auto;
+  display: grid;
+  margin: 20px 20px 0px 20px;
+  grid-template-columns: repeat(4 , 1fr);
+  grid-template-areas: "one two three four";
+  grid-gap : 20px;
+}
+
+@media (max-width : 1124px) {
+}
+
+@media (max-width : 1125px) {
+  .Home {
+    width: 1125px;
+  }
+
+  .Cards {
+    width: 1068px;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-areas: "one two three";
+  }
+}

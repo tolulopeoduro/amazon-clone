@@ -16,7 +16,7 @@
 
 .Image {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     overflow: hidden;
     height: 304px;
     width: 90%;
@@ -36,11 +36,23 @@
 
 .SubGrid {
     padding-top : 10px;
+    margin: auto;
+    width: 115px;
+    overflow: hidden;
 }
 
 .SubGridImage {
-    margin : 0px auto;
+    margin : 0px 5px;
     width: fit-content;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.SubGridImage > img {
+    width: 100%;
 }
 
 .SubGridName {
