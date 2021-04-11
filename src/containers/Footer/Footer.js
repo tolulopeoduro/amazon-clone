@@ -1,5 +1,6 @@
 import classes from "./Footer.module.css";
-import react from "react";
+import TopFooter from "./TopFooter/TopFooter";
+import BottomFooter from "./BottomFooter/BottomFooter";
 
 
 
@@ -9,6 +10,8 @@ const Footer = () => {
             <div className = {classes.BackToTop}>
                 <span>Back to top</span>
             </div>
+            <TopFooter/>
+            <BottomFooter/>
         </div>
     )
 }

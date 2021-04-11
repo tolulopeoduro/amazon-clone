@@ -2,8 +2,8 @@
     width : 100%;
 }   
 
-@media (max-width : 999px) {
+@media (max-width : 1125px) {
     .Navbar {
-        width: 1200px;
+        width: 1125px;
     }
 }

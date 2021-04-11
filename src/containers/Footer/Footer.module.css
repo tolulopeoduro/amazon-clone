@@ -1,0 +1,18 @@
+.BackToTop{
+    margin-top: 20px;
+    height: 80px;
+    background-color: #37475A;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+@media (max-width : 1125px) {
+    .BackToTop {
+        width: 1125px;
+    }
+  }

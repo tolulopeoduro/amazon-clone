@@ -1,6 +1,6 @@
 .Home {
-    width: 100%;
     overflow: hidden;
+    width: 100%;
 }
 
 .Products {
@@ -20,10 +20,9 @@
   grid-gap : 20px;
 }
 
-@media (max-width : 1124px) {
-}
 
-@media (max-width : 1125px) {
+
+@media (max-width : 1124px) {
   .Home {
     width: 1125px;
   }

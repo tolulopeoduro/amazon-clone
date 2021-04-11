@@ -1,0 +1,106 @@
+.TopFooter {
+    height: auto;
+    background-color: #232F3E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.AllLinks {
+    margin: 40px 10%;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+
+.Section {
+    display: flex;
+    flex-direction: column;
+}
+
+.Section > h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.Section > a {
+    color : white;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.Options {
+    width: 800px;
+    margin: 20px auto;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 200px 160px 200px 200px ;
+    grid-gap : 10px;
+    justify-content: space-between;
+}
+
+
+
+.Logo {
+    height: 100%;
+    padding-top: 10px ;
+}
+
+.Logo > img {
+    height: 32px;
+}
+
+.Language , .Country , .Currency {
+    border: 1px solid white;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.Language {
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.Currency {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px ;
+}
+
+.Country {
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+}
+
+
+
+.Country > img {
+    height: 13px;
+    padding-top: 13px;
+    margin-right: 5px;
+}
+
+.Country > span {
+    padding-top: 12px;
+}
+
+.OptionContainer {
+    border-top : 1px solid white;
+    height: 100px;
+    background-color: #232F3E;
+}
+
+@media (max-width : 1125px) {
+    .TopFooter {
+        height: auto;
+        background-color: #232F3E;
+        width: 1125px;
+        display: flex;
+        flex-direction: column;
+    }
+  }

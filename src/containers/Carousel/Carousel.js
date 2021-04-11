@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import classes from "./Carousel.module.css"
 
 const Carousel  = () => {
-    const [List , setList] = useState([
+    const List = [
         {src :"/images/amazon-slide6.jpg"},
         {src :"/images/amazon-slide1.jpg"},
         {src :"/images/amazon-slide2.jpg"},
@@ -11,10 +11,9 @@ const Carousel  = () => {
         {src :"/images/amazon-slide5.jpg"},
         {src :"/images/amazon-slide6.jpg"},
         {src :"/images/amazon-slide1.jpg"},
-    ]);
+    ];
 
     const [windowWidth , setWindowWidth] = useState(window.innerWidth)
-    const [onOff , setOnOff]  = useState(true)
     const image = useRef(null)
     
     const toNext = (behavior , times) => {
@@ -23,22 +22,28 @@ const Carousel  = () => {
             behavior: behavior
         });
     }
-
     
     
-    const initialRender = useRef(true)
-    const middle = useRef(null)
     const autoslide = useRef(true)
     
     const carousel = useRef(null)
     const [current , setCurrent] = useState(0)
-
+    
+    const usePrev = (data) => {
+        const ref = React.useRef();
+        React.useEffect(() => {
+            ref.current = data
+        } , [data]);
+        return ref.current
+    }
+    const prevSlide = usePrev(current)
+    
     useEffect(() => {
         toNext("auto" , current)
         return () => {
             window.removeEventListener("resize" , setWindowWidth(window.innerWidth))
         }
-    }, [windowWidth])
+    }, [windowWidth , current])
     
     useEffect(() => {
         if (current === 1 && prevSlide === 0) {
@@ -62,7 +67,7 @@ const Carousel  = () => {
                 setCurrent(1)
             }, 700);
         }
-    } , [current])
+    } , [current , List.length , prevSlide])
 
     useEffect(() => {
         setTimeout(() => {
@@ -74,47 +79,38 @@ const Carousel  = () => {
                 autoslide.current = false   
             }
         }, 3000);
-    } , [current])
-
-    const usePrev = (data) => {
-        const ref = React.useRef();
-        React.useEffect(() => {
-            ref.current = data
-        } , [data]);
-        return ref.current
-    }
+    } , [current , List.length])
 
 
 
-    const prevSlide = usePrev(current)
+
 
 
     const slides = List.map(images => 
     <div ref = {image} className = {classes.Image} >
         <div></div>
-        <img src = {images.src}/>
+        <img src = {images.src} alt = ""/>
     </div>)
 
     window.addEventListener("load" , () => setCurrent(1))
-    //window.addEventListener("resize" , () => { autoslide.current = false})
     window.addEventListener("resize" , () => setWindowWidth(window.innerWidth))
     return (
         <div className = {classes.Maindiv}>
             <div className ={classes.CarouselContainer} ref = {carousel}>
                 {slides}
             </div>
-            <div className = {classes.Controls}>
+            <div style = {{width : windowWidth > 1125? "100%" : "1125px"}} className = {classes.Controls}>
                 <div className = {classes.PrevSlideButton} onClick = {() => {
                     autoslide.current = false
                     setCurrent(current - 1)
                 }}>
-                    <img src = {"/images/prev-slide.svg"} height = "40px" width = "40px" />
+                    <img src = {"/images/prev-slide.svg"} alt = "" height = "40px" width = "40px" />
                 </div>
                 <div className = {classes.NextSlideButton} onClick = {() => {
                     autoslide.current = false
                     setCurrent(current + 1)
                 }}>
-                    <img src = {"/images/next-slide.svg"} height = "40px" width = "40px" />
+                    <img src = {"/images/next-slide.svg"} alt = "" height = "40px" width = "40px" />
                 </div>
             </div>
         </div>

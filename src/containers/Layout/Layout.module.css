@@ -2,8 +2,23 @@
     width: 100%;
 }
 
-@media (max-width : 999px) {
+.LayoutMobile {
+  display: none;
+}
+
+@media (max-width : 1125px) {
     .Layout {
-      width: 1200px;
+      width: 1125px;
     }
   }
+
+@media (max-width : 540px) {
+    .Layout{
+      display: none;
+    }
+
+    .LayoutMobile{
+      display: block;
+      width: 100vw;
+    }
+}

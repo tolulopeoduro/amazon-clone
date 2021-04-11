@@ -9,7 +9,7 @@ const SpecialCard = () => {
                 <button>Sign in Securely</button>
             </div>
             <div className = {classes.Shipping}>
-                <img src = "/images/shipping.jpg" />
+                <img src = "/images/shipping.jpg" alt = "" />
             </div>
         </div>
     )

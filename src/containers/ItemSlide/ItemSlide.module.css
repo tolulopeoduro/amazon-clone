@@ -70,9 +70,9 @@
     overflow-x: scroll;
 }
 
-@media (max-width : 1124px) {
+@media (max-width : 1125px) {
     .Main {
-      width: 1200px;
+      width: 1085px;
       grid-template-columns: repeat(3 , 1fr);
       grid-template-areas: "one two three";
     }
