@@ -4,13 +4,14 @@ import classes from "./Carousel.module.css"
 const Carousel  = () => {
     const List = [
         {src :"/images/amazon-slide6.jpg"},
+        {src :"/images/mothers-day.jpg"},
         {src :"/images/amazon-slide1.jpg"},
         {src :"/images/amazon-slide2.jpg"},
         {src :"/images/amazon-slide3.jpg"},
         {src :"/images/amazon-slide4.jpg"},
         {src :"/images/amazon-slide5.jpg"},
         {src :"/images/amazon-slide6.jpg"},
-        {src :"/images/amazon-slide1.jpg"},
+        {src :"/images/mothers-day.jpg"},
     ];
 
     const [windowWidth , setWindowWidth] = useState(window.innerWidth)
@@ -39,7 +40,7 @@ const Carousel  = () => {
     const prevSlide = usePrev(current)
     
     useEffect(() => {
-        toNext("auto" , current)
+        toNext("smooth" , current)
         return () => {
             window.removeEventListener("resize" , setWindowWidth(window.innerWidth))
         }
@@ -67,7 +68,7 @@ const Carousel  = () => {
                 setCurrent(1)
             }, 700);
         }
-    } , [current , List.length , prevSlide])
+    } , [current])
 
     useEffect(() => {
         setTimeout(() => {
