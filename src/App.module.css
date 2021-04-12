@@ -1,12 +1,24 @@
+@font-face {
+  font-family: 'mainfont';
+  src: url("./fonts/Lato/Lato-Regular.ttf");
+}
+
 .App {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  font-family: 'mainfont' ;
 }
 
 
 @media (max-width : 1125px) {
   .App {
     width: 1125px;
+  }
+}
+
+@media (max-width : 540px) {
+  .App {
+    width : 100vw;
   }
 }
