@@ -1,0 +1,42 @@
+.Explore {
+    width: 100%;
+    background-color:#fff;
+    padding: 20px 20px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+}
+
+.Header {
+    height: 30px;
+    font-size: 20px;
+}
+
+.Body {
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2 , 1fr);
+    margin-bottom: 20px;
+}
+
+.Department{
+    height: 15vh;
+    width: auto;
+}
+
+.Image {
+    height: 80%;
+    background-position: center;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+.Name {
+    height: 20px;
+    font-weight: lighter;
+}
+
+.Footer {
+    height: 20px;
+    color: #7BB5C0
+}

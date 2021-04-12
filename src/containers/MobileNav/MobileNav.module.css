@@ -1,8 +1,11 @@
 .MobileNav {
-    width: 100%;
-    height: 187px;
+    width: 100vw;
+    height: 192px;
     background-color: #232F3E;
 }
 
-
-
+.Left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}

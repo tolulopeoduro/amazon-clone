@@ -1,0 +1,58 @@
+.BottomFooter {
+    height: 300px;
+    background-color: #0D141E;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.Preferences {
+    color: white;
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    padding-top: 30px;
+}
+
+.Preferences > div {
+    height: 40px;
+}
+
+.Language {
+    margin-right: 20px;
+}
+
+.Country {
+    margin-left: 40px;
+}
+
+.Country > img {
+    margin-right: 8px;
+}
+
+.SignIn {
+    height: 70px;
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.ConditionsAndOthers {
+    color: white;
+    margin: 30px auto 0px auto;
+    flex-wrap: wrap;
+    width: 320px;
+    font-size: 12px;
+    display: flex;
+}
+
+.ConditionsAndOthers > p {
+    margin : 0px 4px;
+}
+
+.Copyright {
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+}

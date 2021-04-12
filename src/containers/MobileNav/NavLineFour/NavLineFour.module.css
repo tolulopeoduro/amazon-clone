@@ -1,0 +1,17 @@
+.NavLineFour {
+    height: 44px;
+    background-color: #37475A;
+    padding: 10px 20px;
+}
+
+.DeliverTo {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+}
+
+.DeliverTo > img {
+    margin-right: 5px;
+}

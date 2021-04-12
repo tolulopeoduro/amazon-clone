@@ -1,18 +1,57 @@
 .NavLineOne {
     height: 47px;
+    box-sizing: border-box;
+    padding: 0px 20px;
 }
 
 .MenuButton {
     height: 20px;
+    width: 20px;
+    padding: 13px 13px 0px 0px;
     width: 23px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+}
+
+.Left {
+    display: flex;
+    float: left;
 }
 
 .MenuButton > div {
-    height: 1px;
+    height: 2px;
     background-color: whitesmoke;
-    border: 1px solid whitesmoke;
     color: white;
+}
+
+.Logo {
+    padding-top: 13px;
+}
+
+.Right {
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.SignIn {
+    color : white;
+    padding-top: 12px;
+}
+
+.Cart {
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.CartItems {
+    color: #ff9900;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    bottom: 30px;
+    left: 20px
 }

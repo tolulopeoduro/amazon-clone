@@ -12,7 +12,7 @@
     }
   }
 
-@media (max-width : 540px) {
+@media (max-width : 719px) and (orientation : portrait) {
     .Layout{
       display: none;
     }

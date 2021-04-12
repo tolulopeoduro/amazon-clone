@@ -22,14 +22,15 @@
 
 
 
-@media (max-width : 1124px) {
+@media (max-width : 1125px) {
   .Home {
     width: 1125px;
   }
 
   .Cards {
-    width: 1068px;
+    width: auto;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-areas: "one two three";
+    box-sizing: border-box;
   }
 }

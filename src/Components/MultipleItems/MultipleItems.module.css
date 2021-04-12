@@ -1,0 +1,46 @@
+.MultipleItems {
+    width: 100vw;
+    background-color: white;
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    margin: 5px 0px;
+}
+
+.Header {
+    height: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Body {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 3px;
+    margin-bottom: 10px;
+}
+
+.NineChildren {
+    grid-template-columns: repeat( 3 , 1fr);
+    grid-template-rows: repeat( 3 , 1fr);
+}
+
+.FourChildren {
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat( 2 , 1fr);
+}
+
+.Item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #F8F8F8;
+}
+
+.Footer {
+    height: 25px;
+}
+
+.Footer > a {
+    color: #7BB5C0;
+}

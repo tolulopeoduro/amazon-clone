@@ -1,0 +1,19 @@
+.NavLineThree {
+    height: 45px;
+    overflow-y: scroll;
+}
+
+.Links {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    flex-wrap: nowrap;
+    width: max-content;
+}
+
+.Link {
+    width: fit-content;
+    padding : 0px 10px
+}
+

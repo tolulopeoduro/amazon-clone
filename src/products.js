@@ -28,3 +28,34 @@ export const clothings = [
     { href : "#" , src : "/images/Cardigans.jpg" , name : "Cardigans"},
     { href : "#" , src : "/images/easy-tees.jpg" , name : "Easy tees"}
 ]
+
+export const MobileItemsOne = [
+    "/images/mobile/31aYZs3ij5L._AC_SY200_.jpg",
+    "/images/mobile/41BP6N0cDVL._AC_SY200_.jpg",
+    "/images/mobile/41NmVquqtLL._AC_SY200_.jpg",
+    "/images/mobile/41PDAAtkyGL._AC_SY200_.png",
+    "/images/mobile/41QztBTooxL._AC_SY200_.jpg",
+    "/images/mobile/41sFQT0I4aL._AC_SY200_.png",
+    "/images/mobile/41VbT96pAWL._AC_SY200_.png",
+    "/images/mobile/51NV8Uil7wL._AC_SY200_.jpg",
+    "/images/mobile/51vOyKGea+L._AC_SY200_.png"
+]
+
+export const MobileItemsTwo = [
+    "/images/mobile/Card2/51AaJPOD4qL._AC_SY200_.png",
+    "/images/mobile/Card2/41ZmuuKMtmL._AC_SY200_.png",
+    "/images/mobile/Card2/41XCql8cjsL._AC_SY200_.png",
+    "/images/mobile/Card2/41j+wOpGjEL._AC_SY200_.png",
+    "/images/mobile/Card2/41IrQCmYA+L._AC_SY200_.png",
+    "/images/mobile/Card2/41gU8tflgcL._AC_SY200_.png",
+    "/images/mobile/Card2/410IWzsZhvL._AC_SY200_.png",
+    "/images/mobile/Card2/41-7l-po+EL._AC_SY200_.png",
+    "/images/mobile/Card2/31y8TMTwRIL._AC_SY200_.png"
+]
+
+export const MobileItemsThree = [
+    "/images/mobile/Card3/51roA9wBHJL._AC_SY200_.png",
+    "/images/mobile/Card3/51G8LfsNZzL._AC_SY200_.png",
+    "/images/mobile/Card3/41RGrXACv8L._AC_SY200_.png",
+    "/images/mobile/Card3/41+tceVy64L._AC_SY200_.png"
+]
